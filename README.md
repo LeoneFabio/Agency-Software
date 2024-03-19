@@ -3,4 +3,4 @@ Three desktop applications related to the managing of an agency. The bedge to si
 
 This repository contains application designs and implementations in Java (using JavaFX for the Graphical User Interface), with the relative documentation.
 
-NOTE: You are able to find the java projects in the other three branches.
+NOTE: You are able to find the java projects in the other three branches, while here is the documentation and utils.
