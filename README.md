@@ -1,1 +1,1 @@
-This is the softare related to the agency's administrator. 
+This is the software related to the agency's administrator. 
