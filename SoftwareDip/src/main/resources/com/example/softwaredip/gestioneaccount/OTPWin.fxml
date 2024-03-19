@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1080.0" stylesheets="@../styleSheet.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.softwaredip.gestioneaccount.OTPWinInterfaccia">
+   <center>
+      <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="50.0" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fitHeight="560.0" fitWidth="580.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../immagini/foto/recupera_psw_sfondo.png" />
+               </image>
+            </ImageView>
+            <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="320.0" prefWidth="350.0">
+               <children>
+                  <VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="320.0" prefWidth="350.0" spacing="10.0" styleClass="inputTextArea">
+                     <children>
+                        <Label prefHeight="71.0" prefWidth="275.0" styleClass="titolo" text="Abbiamo inviato un codice OTP all'email della matricola inserita" textAlignment="CENTER" textFill="WHITE" wrapText="true">
+                           <VBox.margin>
+                              <Insets bottom="20.0" top="20.0" />
+                           </VBox.margin>
+                        </Label>
+                        <HBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="40.0" prefWidth="150.0" styleClass="loginTextFieldArea">
+                           <children>
+                              <Label styleClass="titolo" text="OTP:" textFill="WHITE">
+                                 <font>
+                                    <Font name="System Bold" size="12.0" />
+                                 </font>
+                              </Label>
+                              <TextField fx:id="OTPTextField" prefHeight="30.0" prefWidth="100.0">
+                                 <styleClass>
+                                    <String fx:value="loginTextField" />
+                                    <String fx:value="testo" />
+                                 </styleClass></TextField>
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="48.0" prefWidth="276.0" spacing="100.0">
+                           <children>
+                              <Button maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#annulla" prefHeight="35.0" prefWidth="80.0" styleClass="indietroBtn" text="Annulla" />
+                              <Button defaultButton="true" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#verificaOTP" prefHeight="35.0" prefWidth="80.0" styleClass="loginBtn" text="Avanti" />
+                           </children>
+                           <VBox.margin>
+                              <Insets top="30.0" />
+                           </VBox.margin>
+                        </HBox>
+                     </children>
+                  </VBox>
+                  <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="120.0" layoutY="-103.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../immagini/foto/lucchetto_blu.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+         </children>
+      </HBox>
+   </center>
+   <left>
+      <AnchorPane prefHeight="720.0" prefWidth="60.0" styleClass="bluGradient" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="7.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="10.0">
+               <image>
+                  <Image url="@../immagini/logo/bi.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </left>
+</BorderPane>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+
+<BorderPane fx:id="borderPane" prefHeight="600.0" prefWidth="800.0" styleClass="sfondoMain" stylesheets="@../styleSheet.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.softwaredip.gestionecomunicazioni.ComunRicevWinInterfaccia">
+   <left>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: white;" styleClass="listLateralLine" BorderPane.alignment="CENTER">
+         <children>
+            <ListView fx:id="ricevutiListView" prefHeight="321.0" prefWidth="200.0" AnchorPane.bottomAnchor="75.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+            <HBox alignment="CENTER" layoutY="354.0" prefHeight="70.0" prefWidth="200.0" spacing="10.0" style="-fx-border-image-width: 10 10 10 10;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+               <children>
+                  <Button mnemonicParsing="false" onAction="#apriRichiesteInviate" prefHeight="55.0" prefWidth="120.0" styleClass="gotoBtn" text="Richieste effettuate" wrapText="true" />
+                  <Button maxHeight="-Infinity" maxWidth="-Infinity" mnemonicParsing="false" onAction="#apriNuovaRichiesta" prefHeight="40.0" prefWidth="40.0" styleClass="addBtn">
+                     <graphic>
+                        <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../Icone/aggiungi.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+               </children>
+            </HBox>
+         </children>
+      </AnchorPane>
+   </left>
+</BorderPane>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="500.0" style="-fx-background-color: white;" styleClass="tabellaStipendio" stylesheets="@../styleSheet.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.softwaredip.gestionecomunicazioni.PVWinInterfaccia">
+   <children>
+      <VBox layoutX="50.0" layoutY="50.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="400.0" spacing="30.0" AnchorPane.bottomAnchor="48.0" AnchorPane.leftAnchor="50.0" AnchorPane.rightAnchor="48.0" AnchorPane.topAnchor="50.0">
+         <children>
+            <HBox alignment="BOTTOM_LEFT" maxWidth="-Infinity" prefWidth="350.0" style="-fx-border-width: 0 0 1 0; -fx-border-color: black;">
+               <children>
+                  <Label styleClass="titolo" text="Tipologia: " />
+                  <Label fx:id="tipologiaLabel" alignment="CENTER" maxHeight="1.7976931348623157E308" styleClass="testo" text="tipologiaComunicazione" />
+               </children>
+            </HBox>
+            <HBox alignment="BOTTOM_LEFT" maxWidth="-Infinity" prefWidth="350.0" style="-fx-border-width: 0 0 1 0; -fx-border-color: black;">
+               <children>
+                  <Label styleClass="titolo" text="Oggetto: " />
+                  <Label fx:id="oggettolabel" alignment="CENTER" maxHeight="1.7976931348623157E308" styleClass="testo" text="oggetto" />
+               </children>
+            </HBox>
+            <Label fx:id="contenutoLabel" maxWidth="1.7976931348623157E308" prefWidth="220.0" styleClass="testo" text="contenuto" wrapText="true" />
+            <Label alignment="CENTER" maxWidth="1.7976931348623157E308" styleClass="titolo" text="Proposta" />
+            <HBox fx:id="hBox" alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="10.0">
+               <children>
+                  <VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="100.0" prefWidth="100.0" spacing="10.0" styleClass="tabellaStipendio">
+                     <children>
+                        <Label fx:id="dataTurnoLabel" styleClass="titolo" text="Label1" />
+                        <Label fx:id="entrataTurnoLabel" styleClass="titolo" text="Label" />
+                        <Label fx:id="uscitaTurnoLabel" styleClass="titolo" text="Label" />
+                     </children>
+                  </VBox>
+                  <ImageView fitHeight="50.0" fitWidth="80.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Icone/freccia_lunga_a_dx.png" />
+                     </image></ImageView>
+                  <VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="100.0" prefWidth="100.0" spacing="10.0" styleClass="tabellaStipendio">
+                     <children>
+                        <Label fx:id="dataCambioLabel" styleClass="titolo" text="Label2" />
+                        <Label fx:id="entrataCambioLabel" styleClass="titolo" text="Label" />
+                        <Label fx:id="uscitaCambioLabel" styleClass="titolo" text="Label" />
+                     </children>
+                  </VBox>
+               </children>
+               <VBox.margin>
+                  <Insets bottom="20.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="50.0">
+               <children>
+                  <Button fx:id="rifiutaBtn" mnemonicParsing="false" onAction="#rifiutaPV" styleClass="red_white_btn" text="Rifiuta" />
+                  <Label fx:id="statoPVLabel" styleClass="titolo" text="Label" />
+                  <Button fx:id="accettaBtn" mnemonicParsing="false" onAction="#accettaPV" styleClass="green_white_btn" text="Accetta" />
+               </children>
+            </HBox>
+         </children>
+         <padding>
+            <Insets top="40.0" />
+         </padding>
+      </VBox>
+      <AnchorPane layoutX="425.0" prefHeight="101.0" prefWidth="50.0" style="-fx-background-radius: 0 0 32 32;" AnchorPane.rightAnchor="25.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="10.0" layoutY="51.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Icone/comunicazione.png" />
+               </image>
+            </ImageView>
+         </children>
+         <styleClass>
+            <String fx:value="ombra" />
+            <String fx:value="bluGradient" />
+         </styleClass>
+      </AnchorPane>
+   </children>
+</AnchorPane>

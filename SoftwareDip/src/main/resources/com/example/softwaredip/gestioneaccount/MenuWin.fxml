@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane fx:id="borderPaneSwitch" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="800.0" stylesheets="@../styleSheet.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.softwaredip.gestioneaccount.MenuWinInterfaccia">
+   <left>
+      <HBox prefHeight="335.0" prefWidth="248.0" BorderPane.alignment="CENTER">
+         <children>
+            <AnchorPane maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="335.0" prefWidth="40.0" style="-fx-background-color: #003db0;">
+               <children>
+                  <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="5.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="14.0">
+                     <image>
+                        <Image url="@../Icone/logo/iconaLogoPiccolaBianco.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+            <AnchorPane maxWidth="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="240.0" styleClass="bluGradient">
+               <children>
+                  <VBox prefHeight="288.0" prefWidth="220.0" spacing="5.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <children>
+                        <HBox alignment="CENTER_LEFT" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="60.0" prefWidth="210.0" spacing="10.0" styleClass="UserEtichetta">
+                           <children>
+                              <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../Icone/dipendenteIcona.png" />
+                                 </image>
+                              </ImageView>
+                              <VBox maxHeight="-Infinity" prefHeight="42.0" prefWidth="140.0">
+                                 <children>
+                                    <Label fx:id="nomeLabel" text="Nome utente" textFill="WHITE">
+                                       <font>
+                                          <Font name="System Bold" size="15.0" />
+                                       </font>
+                                    </Label>
+                                    <Label fx:id="ruoloLabel" text="Qualifica" textFill="WHITE">
+                                       <font>
+                                          <Font size="15.0" />
+                                       </font></Label>
+                                 </children>
+                              </VBox>
+                           </children>
+                           <VBox.margin>
+                              <Insets bottom="10.0" />
+                           </VBox.margin>
+                           <padding>
+                              <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                           </padding>
+                        </HBox>
+                        <Line endX="70.29289245706055" endY="-1.0" startX="277.79290771484375" startY="-1.0" stroke="WHITE">
+                           <VBox.margin>
+                              <Insets bottom="5.0" />
+                           </VBox.margin>
+                        </Line>
+                        <Button fx:id="homeBtn" alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#apriHome" prefHeight="30.0" prefWidth="210.0" styleClass="menuBtn" text="Home" textAlignment="CENTER" wrapText="true">
+                           <graphic>
+                              <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../Icone/home.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                        <Button fx:id="stipendioBtn" alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#apriStipendio" prefHeight="30.0" prefWidth="210.0" styleClass="menuBtn" text="Visualizza stipendio">
+                           <graphic>
+                              <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../Icone/soldi.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                        <Button fx:id="turniBtn" alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#apriTurni" prefHeight="30.0" prefWidth="210.0" styleClass="menuBtn" text="Turni">
+                           <graphic>
+                              <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../Icone/calendario.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                        <Button fx:id="firmaBtn" alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#apriFirma" prefHeight="30.0" prefWidth="210.0" styleClass="menuBtn" text="Rilevazione presenze">
+                           <graphic>
+                              <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../Icone/id-verificato.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                        <Button fx:id="comunicazioniBtn" alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#apriComunicazioni" prefHeight="30.0" prefWidth="210.0" styleClass="menuBtn" text="Comunicazioni">
+                           <graphic>
+                              <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../Icone/messaggi.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                        <Button fx:id="moficaAccountBtn" alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#apriModificaAccount" prefHeight="30.0" prefWidth="210.0" styleClass="menuBtn" text="Modifica account">
+                           <graphic>
+                              <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../Icone/impostazioni.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                     </children>
+                     <padding>
+                        <Insets left="10.0" top="10.0" />
+                     </padding>
+                  </VBox>
+                  <Button alignment="BASELINE_LEFT" layoutX="9.0" layoutY="288.0" mnemonicParsing="false" onAction="#logOut" prefHeight="30.0" prefWidth="210.0" styleClass="menuBtn" text="Log out" AnchorPane.bottomAnchor="20.0">
+                     <graphic>
+                        <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../Icone/logout.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+               </children>
+            </AnchorPane>
+         </children>
+      </HBox>
+   </left>
+   <styleClass>
+      <String fx:value="sfondoMain" />
+      <String fx:value="background" />
+   </styleClass>
+</BorderPane>
