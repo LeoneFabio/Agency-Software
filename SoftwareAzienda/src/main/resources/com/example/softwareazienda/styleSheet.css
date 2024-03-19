@@ -1,0 +1,639 @@
+/*------------------------------------------------------------------------- TESTO*/
+.titoloGrosso2{
+    -fx-background-color: #0059ff;
+    -fx-background-radius: 15px;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-font-size: 40px;
+}
+
+.titolo{
+     -fx-font-size: 15px;
+     -fx-font-weight: bold;
+}
+
+.testo{
+    -fx-font-size: 14px;
+}
+
+.testo_min{
+    -fx-font-size: 12px;
+}
+
+/*------------------------------------------------------------------------- FINE TESTO*/
+
+/*------------------------------------------------------------------------- PULSANTI*/
+.green_white_btn{
+    -fx-background-color: #32cf4e;
+    -fx-background-radius: 5px;
+    -fx-text-fill: white;
+    -fx-font-size: 15px;
+    -fx-font-family: System;
+    -fx-font-weight: bold;
+    -fx-border-color: transparent;
+    -fx-border-radius: 5px;
+    -fx-border-width: 2px;
+    -fx-cursor: hand;
+}
+
+.green_white_btn:hover {
+-fx-background-color: white;
+    -fx-text-fill: #32cf4e;
+    -fx-border-color: #32cf4e;
+    -fx-border-width: 2px;
+    -fx-border-radius: 5px;
+}
+
+.red_white_btn{
+    -fx-background-color: #e30e0e;
+    -fx-background-radius: 5px;
+    -fx-text-fill: white;
+    -fx-font-size: 15px;
+    -fx-font-family: System;
+    -fx-font-weight: bold;
+    -fx-border-color: transparent;
+    -fx-border-radius: 5px;
+    -fx-border-width: 2px;
+    -fx-cursor: hand;
+}
+
+.red_white_btn:hover {
+-fx-background-color: white;
+    -fx-text-fill: #e30e0e;
+    -fx-border-color: #e30e0e;
+    -fx-border-width: 2px;
+    -fx-border-radius: 5px;
+}
+
+.indietroBtn{
+    -fx-background-color: white;
+    -fx-text-fill: black;
+    -fx-background-radius: 32px;
+    -fx-font-size: 15px;
+    -fx-font-family: System;
+    -fx-font-weight: bold;
+    -fx-border-radius: 32px;
+    -fx-cursor: hand;
+}
+
+.indietroBtn:hover {
+    -fx-text-fill: white;
+    -fx-background-color: #e30e0e;
+}
+
+.salvaBtn{
+    -fx-background-color: #0059ff;
+    -fx-text-fill: white;
+    -fx-background-radius: 32px;
+    -fx-font-size: 15px;
+    -fx-font-family: System;
+    -fx-font-weight: bold;
+    -fx-border-radius: 32px;
+    -fx-cursor: hand;
+}
+
+.salvaBtn:hover {
+    -fx-text-fill: white;
+    -fx-background-color: #32cf4e;
+}
+
+.gotoBtn{
+    -fx-background-color: #003db0;
+    -fx-background-radius: 5px;
+    -fx-text-fill: white;
+    -fx-font-size: 15px;
+    -fx-font-family: System;
+    -fx-font-weight: bold;
+    -fx-border-color: #003db0;
+    -fx-border-width: 1px;
+    -fx-border-radius: 3px;
+}
+
+.gotoBtn:hover {
+    -fx-text-fill: black;
+    -fx-background-color: white;
+}
+
+.addBtn {
+    -fx-background-color: #003db0;
+    -fx-text-fill: black;
+    -fx-background-radius: 32px;
+    -fx-font-size: 15px;
+    -fx-font-family: System;
+    -fx-font-weight: bold;
+    -fx-border-radius: 90px;
+    -fx-cursor: hand;
+}
+
+.addBtn:hover {
+    -fx-text-fill: white;
+    -fx-background-color: #32cf4e;
+}
+
+.cliccabile:hover{
+    -fx-cursor: hand;
+}
+/*------------------------------------------------------------------------- FINE PULSANTI*/
+
+/*------------------------------------------------------------------------- TEXT FIELD*/
+
+.text-field{
+    -fx-background-color: white;
+    -fx-min-height: 27px;
+    -fx-pref-height: 27px;
+    -fx-max-height: 27px;
+    -fx-font-size: 14px;
+}
+
+/*------------------------------------------------------------------------- FINE TEXT FIELD*/
+
+/*------------------------------------------------------------------------- TEXT AREA*/
+.text-area{
+    -fx-background-color:transparent;
+    -fx-font-size: 14px;
+}
+
+.selected{
+
+}
+
+.text-area .scroll-bar:vertical {
+  -fx-background-color: #f4f4f4;
+}
+
+.text-area .increment-button ,.list-view .decrement-button {
+  -fx-background-color: #f4f4f4;
+  -fx-border-color: #f4f4f4;
+}
+
+.text-area .scroll-bar:vertical .thumb {
+  -fx-background-color: #c4c4c4;
+  -fx-background-insets: 5, 5, 5;
+  -fx-background-radius: 32px;
+}
+/*------------------------------------------------------------------------- TEXT AREA*/
+
+/*------------------------------------------------------------------------- DATE-PICKER*/
+.date-picker{
+-fx-background-color: transparent;
+}
+
+.date-picker .arrow-button {
+  -fx-background-color: #3d81ff;
+  -fx-background-radius: 0;
+}
+
+.date-picker .arrow-button:hover {
+  -fx-background-color: #326edb;
+}
+
+.date-picker .arrow-button .arrow {
+  -fx-background-color: white;
+}
+
+.date-picker .cell {
+  -fx-background-color: white;
+}
+
+.date-picker .cell:hover {
+  -fx-background-color: #3d81ff;
+}
+
+.date-picker .cell:focused {
+  -fx-background-color: #3d81ff;
+  -fx-text-fill: white;
+}
+
+.date-picker .selected:focused {
+  -fx-background-color: #3d81ff;
+  -fx-text-fill: white;
+}
+
+.date-picker-popup  {
+  -fx-border-color: transparent;
+}
+
+.date-picker-popup .month-year-pane {
+  -fx-background-color: #3d81ff;
+}
+
+.date-picker-popup .month-year-pane .label {
+  -fx-text-fill: white;
+}
+
+.date-picker-popup .week-number-cell {
+  -fx-text-fill: #3d81ff;
+}
+
+.date-picker-popup .week-number-cell:hover {
+  -fx-text-fill: white;
+}
+
+.date-picker-popup .spinner .button .left-arrow,
+.date-picker-popup .spinner .button .right-arrow {
+  -fx-background-color: white;
+}
+/*------------------------------------------------------------------------- FINE DATE-PICKER*/
+
+/*------------------------------------------------------------------------- CHECKBOX*/
+.check-box .box {
+  -fx-background-color: white;
+  -fx-border-color: #b8b8b8;
+  -fx-border-radius: 3px;
+}
+
+.check-box:selected .mark {
+  -fx-background-color: #3d81ff;
+}
+
+.check-box:selected .box {
+  -fx-background-color: white;
+}
+/*------------------------------------------------------------------------- FINE CHECKBOX*/
+
+/*------------------------------------------------------------------------- RADIO BUTTON*/
+
+.radio-button .radio {
+    -fx-background-color: white;
+      -fx-border-color: #b8b8b8;
+      -fx-border-radius: 32px;
+      -fx-font-size:10px; /*In questo modo si riduce il "cerchio"*/
+}
+
+.radio-button:selected .dot {
+    -fx-background-color: #3d81ff;
+}
+
+.dot {
+    -fx-background-color: white;
+    -fx-background-radius: 5px;
+    -fx-padding: 5px;
+}
+/*------------------------------------------------------------------------- FINE RADIO BUTTON*/
+
+/*------------------------------------------------------------------------- CHOICEBOX*/
+.choice-box{
+  -fx-background-color: white;
+  -fx-border-color: #003db0;
+  -fx-border-radius: 3px;
+  -fx-control-inner-background: white;
+  -fx-selection-bar: #3d81ff;
+  -fx-font-size: 14px;
+}
+
+.choice-box .arrow{
+    -fx-background-color: #3d81ff;
+}
+
+.choice-box .menu-item:focused .label{
+    -fx-text-fill: white;
+}
+/*------------------------------------------------------------------------- FINE CHOICEBOX*/
+
+/*------------------------------------------------------------------------- COMBOBOX*/
+.combo-box{
+  -fx-background-color: white;
+  -fx-border-color: #003db0;
+  -fx-border-radius: 3px;
+  -fx-control-inner-background: white;
+  -fx-selection-bar: #3d81ff;
+  -fx-font-size: 14px;
+}
+
+.combo-box .arrow{
+    -fx-background-color: #3d81ff;
+}
+
+.combo-box .menu-item:focused .label{
+    -fx-text-fill: white;
+}
+/*------------------------------------------------------------------------- FINE COMBOBOX*/
+
+/*------------------------------------------------------------------------- LISTE*/
+
+.list-view{
+-fx-font-size: 14px;
+}
+
+.list-view  .list-cell:even {
+-fx-background-color: white;
+-fx-text-fill: black;
+}
+
+.list-view  .list-cell:odd {
+-fx-background-color: #f7f7f7;
+-fx-text-fill: black;
+}
+
+.list-view .list-cell:hover {
+    -fx-background-color: #c9c9c9;
+}
+
+.list-view .list-cell:selected {
+    -fx-background-color: #949494;
+    -fx-text-fill: white;
+}
+
+.list-view .list-cell {
+    -fx-background-color: white;
+    -fx-text-fill: Black;
+}
+
+.list-view,
+.list-view:filled:selected:focused,
+.list-view:selected{
+  -fx-text-fill: #000 !important;
+  -fx-background-insets: 0;
+}
+
+.list-view .scroll-bar:vertical {
+  -fx-background-color: #f4f4f4;
+}
+
+.list-view .increment-button ,.list-view .decrement-button {
+  -fx-background-color: #f4f4f4;
+  -fx-border-color: #f4f4f4;
+}
+
+.list-view .scroll-bar:vertical .thumb {
+  -fx-background-color: #c4c4c4;
+  -fx-background-insets: 5, 5, 5;
+  -fx-background-radius: 32px;
+}
+
+.listLateralLine{
+    -fx-border-color: #003db0;
+    -fx-border-width: 0px 1px 0px 0px;
+}
+/*------------------------------------------------------------------------- FINE LISTE*/
+
+/*------------------------------------------------------------------------- TABELLE*/
+.table-view .column-header .label{
+    -fx-alignment:CENTER_LEFT;
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+}
+
+.table-column {
+  -fx-alignment: CENTER-LEFT;
+}
+
+.table-view .virtual-flow .scroll-bar:vertical,
+.table-view .virtual-flow .scroll-bar:vertical .track,
+.table-view .virtual-flow .scroll-bar:vertical .track-background,
+.table-view .virtual-flow .scroll-bar:horizontal,
+.table-view .virtual-flow .scroll-bar:horizontal .track,
+.table-view .virtual-flow .scroll-bar:horizontal .track-background {
+    /*COLORE SFONDO BARRA DI SCROLL*/
+    -fx-background-color: white;
+}
+
+.table-view .virtual-flow .scroll-bar .increment-button,
+.table-view .virtual-flow .scroll-bar .decrement-button {
+    /*GESTIONE SPAZI BARRA DI SCROLL*/
+    -fx-opacity: 1;
+    -fx-padding: 2;
+}
+
+.table-view .virtual-flow .scroll-bar:vertical .thumb{
+    /*BARRA DI SCROLL*/
+    /*linear-gradient(to bottom, green, red)*/
+
+    -fx-background-color: #c4c4c4;
+    -fx-background-insets: 3, 3, 3;
+    -fx-background-radius: 32px;
+}
+
+.table-view .virtual-flow .scroll-bar:horizontal .thumb {
+    /*BARRA DI SCROLL ORIZZONTALE*/
+    /*linear-gradient(to right, #green, #red)*/
+    -fx-background-color: #c4c4c4;
+    -fx-background-insets: 3, 3, 3;
+    -fx-background-radius: 32px;
+}
+
+/*------------------------------------------------------------------------- FINE TABELLE*/
+
+/*------------------------------------------------------------------------- HOME*/
+.infoField{
+    -fx-background-color: white;
+    -fx-background-radius: 15px;
+}
+
+.ombra{
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.2), 0, 0, 4, 4);
+}
+/*------------------------------------------------------------------------- FINE HOME*/
+
+/*------------------------------------------------------------------------- INPUT TESTO*/
+
+.loginTextField {
+    -fx-background-color: null;
+    -fx-text-fill: white;
+
+}
+
+.loginTextFieldArea {
+    -fx-background-color: #3d81ff;
+    -fx-background-radius: 7px;
+    -fx-padding: 5px;
+}
+
+.loginArea {
+    -fx-background-color: #0059ff;
+    -fx-background-radius: 7px;
+}
+
+/*------------------------------------------------------------------------- FINE INPUT TESTO*/
+
+/*-------------------------------------------------- LOGIN*/
+
+.sfondoLogin{
+    -fx-background-image: url("immagini/foto/sfondo_flat_1.jpg");
+    -fx-background-size: cover;
+}
+
+.loginSide{
+    -fx-background-color: linear-gradient(to bottom, rgb(0, 89, 255,0.9), rgb(61, 129, 255,0.9)) /*rgb(61, 129, 255,0.9)*/ ;
+}
+
+.accessoTextField {
+    -fx-background-color: transparent;
+    -fx-border-color:white;
+    -fx-border-width: 0 0 1 0;
+    -fx-text-fill: white;
+
+}
+
+.accessoTextField:focused {
+    -fx-border-width: 0 0 3 0;
+
+}
+
+.loginBtn {
+    -fx-background-color: white;
+    -fx-text-fill: black;
+    -fx-background-radius: 32px;
+    -fx-font-size: 15px;
+    -fx-font-family: System;
+    -fx-font-weight: bold;
+    -fx-border-radius: 32px;
+    -fx-cursor: hand;
+}
+
+.loginBtn:hover {
+    -fx-text-fill: white;
+    -fx-background-color: #32cf4e;
+}
+
+.hyperLink {
+    -fx-text-fill: white;
+    -fx-font-size: 15px;
+    -fx-underline: false;
+}
+
+.hyperLink:hover{
+    -fx-underline: true;
+}
+
+/*--------------------------------------------------FINE LOGIN*/
+
+/*------------------------------------------------------------------------- MENU*/
+.menuBtn{
+      -fx-background-color: transparent;
+      -fx-background-radius: 7px;
+      -fx-text-fill: white;
+      -fx-font-size: 16px;
+      -fx-font-family: System;
+      -fx-font-weight: bold;
+}
+
+.menuBtn:hover{
+      -fx-background-color: #003db0;
+      -fx-text-fill: #fff;
+}
+
+.menuBtnSelected{
+      -fx-background-color: #3d81ff;
+      -fx-text-fill: #fff;
+}
+
+.userEtichetta{
+      -fx-background-radius: 5px;
+      -fx-border-radius: 5px;
+}
+/*------------------------------------------------------------------------- FINE MENU*/
+
+/*------------------------------------------------------------------------- TABELLA STIPENDIO MENSILE*/
+
+.headerTabellaStipendio{
+    -fx-background-color: #0059ff;
+    -fx-background-radius: 10px 10px 0px 0px;
+}
+
+.tabellaStipendio{
+    -fx-background-radius: 15px;
+    -fx-border-color: #0059ff;
+    -fx-border-width: 2px;
+    -fx-border-radius: 15px;
+}
+
+/*------------------------------------------------------------------------- FINE TABELLA STIPENDIO MENSILE*/
+
+/*------------------------------------------------------------------------- CALENDARIO*/
+
+.calendarBtn{
+      -fx-background-color: null;
+      -fx-background-radius: 7px;
+      -fx-border-color: transparent;
+      -fx-border-radius: 7px;
+}
+
+.calendarBtn:hover{
+    -fx-background-color: #0059ff;
+    -fx-background-radius: 7px;
+    -fx-border-color: white;
+    -fx-border-radius: 7px;
+
+}
+
+.nameDayLabel{
+    -fx-background-color: #326edb;
+    -fx-alignment: center;
+    -fx-min-width: 100;
+    -fx-min-height: 30;
+    -fx-gridPane-halignment: center;
+
+    -fx-font-size: 15px;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+}
+
+.header{
+    -fx-background-color: #003db0;
+}
+
+.headerLabel{
+    -fx-font-size: 14;
+    -fx-text-fill: white;
+    -fx-min-width: 120;
+    -fx-font-weight: bold;
+}
+
+.day{
+    -fx-background-color: #e0e0e0;
+    -fx-alignment: TOP_LEFT;
+    -fx-min-width: 100;
+    -fx-min-height: 80;
+    -fx-padding: 2;
+
+    -fx-border-width:2;
+    -fx-border-color: #b8b8b8;
+    -fx-background-radius: 2px;
+    -fx-border-radius: 2px;
+}
+
+.numberDayLabel{
+    -fx-font-size: 16;
+    -fx-font-weight: bold;
+    -fx-text-fill: black;
+}
+
+.turnLabel{
+    -fx-font-size: 15;
+    -fx-text-fill: black;
+}
+
+.numberDayLabelNone{
+    -fx-font-size: 18;
+    -fx-text-fill: grey;
+}
+
+
+.grid{
+    -fx-hgap:5;
+    -fx-vgap:5;
+}
+
+/*------------------------------------------------------------------------- FINE CALENDARIO*/
+
+/*------------------------------------------------------------------------- RECUPERA PASSWORD*/
+
+.recuperaPswSfondo{
+    -fx-background-image: url("immagini/foto/recupera_psw_sfondo.png");
+    -fx-background-size: cover;
+}
+
+.inputTextArea{
+    -fx-background-color: linear-gradient(to bottom, #0059ff, #3d81ff);;
+    -fx-background-radius: 15px;
+}
+
+.bluGradient{
+    -fx-background-color: linear-gradient(to bottom, #0059ff, #3d81ff);
+}
+
+.sfondoMain{
+    -fx-background-image: url("immagini/foto/sfondo.jpg");
+    -fx-background-size: cover;
+}
