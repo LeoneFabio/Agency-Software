@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+
+<BorderPane fx:id="borderPane" prefHeight="652.0" prefWidth="858.0" stylesheets="@../styleSheet.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.softwareamm.gestioneturni.CalendarioAmmWinInterfaccia">
+   <left>
+      <AnchorPane prefHeight="652.0" prefWidth="230.0" style="-fx-background-color: white;" styleClass="listLateralLine" BorderPane.alignment="CENTER">
+         <children>
+            <HBox alignment="CENTER" layoutY="14.0" prefHeight="40.0" prefWidth="200.0" spacing="10.0" style="-fx-background-color: #003db0;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <Button fx:id="prevBtn" mnemonicParsing="false" onAction="#prevMonth" styleClass="calendarBtn">
+                     <graphic>
+                        <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../Icone/freccia-sinistra.png" />
+                           </image>
+                        </ImageView>
+                     </graphic></Button>
+                  <Label fx:id="meseLabel" alignment="CENTER" prefWidth="120.0" styleClass="titolo" text="Mese" textFill="WHITE" />
+                  <Button fx:id="nextBtn" mnemonicParsing="false" onAction="#nextMonth" styleClass="calendarBtn">
+                     <graphic>
+                        <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../Icone/freccia-destra.png" />
+                           </image>
+                        </ImageView>
+                     </graphic></Button>
+               </children>
+            </HBox>
+            <ListView fx:id="calendarioList" layoutY="104.0" prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="40.0" />
+         </children>
+      </AnchorPane>
+   </left>
+</BorderPane>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<BorderPane fx:id="borderPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="539.0" prefWidth="550.0" styleClass="sfondoMain" stylesheets="@../styleSheet.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.softwareamm.gestionecomunicazioni.NuovaRichiestaAmmWinInterfaccia">
+   <top>
+      <AnchorPane prefHeight="30.0" prefWidth="600.0" style="-fx-background-color: #0059ff;" BorderPane.alignment="CENTER">
+         <children>
+            <Button layoutX="14.0" layoutY="4.0" mnemonicParsing="false" onAction="#indietro" styleClass="menuBtn" AnchorPane.bottomAnchor="5.0" AnchorPane.leftAnchor="5.0" AnchorPane.topAnchor="5.0">
+               <graphic>
+                  <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Icone/freccia.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+         </children>
+      </AnchorPane>
+   </top>
+   <center>
+      <VBox alignment="CENTER" prefHeight="647.0" prefWidth="550.0" spacing="15.0" BorderPane.alignment="CENTER">
+         <children>
+            <VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="278.0" prefWidth="400.0" spacing="35.0">
+               <children>
+                  <Label styleClass="titolo" text="Selezionare dipendente:" textFill="WHITE" />
+                  <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="10.0">
+                     <children>
+                        <ComboBox fx:id="comboBox" editable="true" prefHeight="25.0" prefWidth="269.0" />
+                        <Button mnemonicParsing="false" onAction="#aggiornaLista" styleClass="loginBtn" text="Cerca" />
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER_RIGHT" prefWidth="200.0">
+                     <children>
+                        <Button fx:id="avantiBtn" mnemonicParsing="false" onAction="#avanti" prefHeight="33.0" prefWidth="119.0" styleClass="gotoBtn" text="Avanti" />
+                     </children>
+                     <padding>
+                        <Insets right="20.0" />
+                     </padding>
+                  </HBox>
+               </children>
+               <styleClass>
+                  <String fx:value="loginArea" />
+                  <String fx:value="bluGradient" />
+               </styleClass>
+            </VBox>
+         </children>
+      </VBox>
+   </center>
+</BorderPane>

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1080.0" styleClass="sfondoLogin" stylesheets="@../styleSheet.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.softwareamm.gestioneaccount.AccessoWinInterfaccia">
+   <left>
+      <VBox alignment="CENTER" maxWidth="-Infinity" prefHeight="720.0" prefWidth="550.0" styleClass="loginSide" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fitHeight="183.0" fitWidth="199.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../immagini/logo/bit.png" />
+               </image>
+            </ImageView>
+            <VBox alignment="CENTER" prefHeight="309.0" prefWidth="400.0" spacing="10.0">
+               <children>
+                  <VBox maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="60.0" prefWidth="300.0">
+                     <children>
+                        <Label styleClass="titolo" text="Matricola" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font></Label>
+                        <TextField fx:id="matricolaTextField">
+                           <styleClass>
+                              <String fx:value="accessoTextField" />
+                              <String fx:value="testo" />
+                           </styleClass></TextField>
+                     </children>
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                  </VBox>
+                  <VBox maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="60.0" prefWidth="300.0">
+                     <children>
+                        <Label styleClass="titolo" text="Password" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font></Label>
+                        <PasswordField fx:id="passwordField">
+                           <styleClass>
+                              <String fx:value="accessoTextField" />
+                              <String fx:value="testo" />
+                           </styleClass></PasswordField>
+                     </children>
+                  </VBox>
+                  <HBox maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="20.0" prefWidth="300.0">
+                     <children>
+                        <Hyperlink onAction="#apriRecuperaPassword" styleClass="hyperLink" text="Recupera password">
+                           <HBox.margin>
+                              <Insets />
+                           </HBox.margin>
+                        </Hyperlink>
+                     </children>
+                  </HBox>
+                  <Button defaultButton="true" mnemonicParsing="false" onAction="#accedi" prefHeight="40.0" prefWidth="111.0" styleClass="loginBtn" text="LOG IN">
+                     <VBox.margin>
+                        <Insets top="30.0" />
+                     </VBox.margin>
+                  </Button>
+               </children>
+            </VBox>
+         </children>
+      </VBox>
+   </left>
+   <right>
+      <Label alignment="CENTER" prefHeight="26.0" prefWidth="150.0" text="vers. Amministrativa" textFill="WHITE" BorderPane.alignment="BOTTOM_RIGHT">
+         <BorderPane.margin>
+            <Insets bottom="10.0" right="10.0" />
+         </BorderPane.margin>
+         <styleClass>
+            <String fx:value="loginArea" />
+            <String fx:value="bluGradient" />
+            <String fx:value="ombra" />
+         </styleClass>
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+   </right>
+</BorderPane>
